@@ -5,6 +5,10 @@ import random
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from typing import Dict, List
+from keep_alive import keep_alive
+
+# Keep aliving the server
+keep_alive()
 
 
 # Load variables from .env file
